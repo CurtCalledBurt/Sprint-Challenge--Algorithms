@@ -13,4 +13,5 @@ def count_th(word):
     if word[-2:] == 'th':
         th_count += 1
     
+    # repeat this process on the word minus the last letter
     return th_count + count_th(word[:-1])
