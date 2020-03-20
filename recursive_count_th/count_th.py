@@ -8,8 +8,9 @@ def count_th(word):
     if len(word) < 2:
         return 0
     
-    # check last two letters to see if they are 'th'
+    # count the 'th'
     th_count = 0
+    # increase th_count if the letters are 'th'
     if word[-2:] == 'th':
         th_count += 1
     
